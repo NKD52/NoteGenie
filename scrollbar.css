@@ -1,0 +1,65 @@
+p::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+p::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+p::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+    border: 2px solid #f1f1f1;
+}
+
+p::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+
+.boxes::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.boxes::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.boxes::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+    border: 2px solid #f1f1f1;
+}
+
+.boxes::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+
+
+
+
+
+.summaryul::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.summaryul::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.summaryul::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+    border: 2px solid #f1f1f1;
+}
+
+.summaryul::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+
+
