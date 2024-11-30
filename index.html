@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="scrollbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_return" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=filter_alt" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Funnel+Display:wght@300..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/vis-network@9.1.2/styles/vis-network.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=1.0">
+
+
+
+
+</head>
+<body>
+    <div class="main">
+        <main>
+        <nav>
+            <ul class="navul">
+                <!-- <li class="navli"><a href="home.html"><i class="fas fa-home"></i></a></li>
+                <li class="navli"><a href="home.html"><i class="fas fa-home"></i></a></li>
+                <li class="navli"><a href="home.html"><i class="fas fa-home"></i></a></li>
+                <li class="navli"><a href="home.html"><i class="fas fa-home"></i></a></li>
+                <li class="navli"><a href="home.html"><i class="fas fa-home"></i></a></li> -->
+                <!-- <li class="navli"><a href="#"><i class="fas fa-add"></i></a></li> -->
+                <button class="addNote"><i class="fas fa-add"></i></button>
+            </ul>
+        </nav>
+        
+        <div class="content">
+            <div class="searchdiv">
+                
+                <div class="logocon">
+                    <div class="wrapper">
+                        <p>Note</p>
+                        <div class="words">
+                            <span>Genie</span>
+                            <span>Assist</span>
+                            <span>Buddy</span>
+                            <span>Goofy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="searchandfilter">
+                    <select name="filtersearch" id="filtersearch" class="styled-select">
+                        <option value="0"></i></option>
+                        <option value="asc">Ascending</option>
+                        <option value="des">Descending</option>
+                        <option value="newest">Newest</option>
+                        <option value="oldest">Oldest</option>
+                    </select>
+                    <input type="text" class="searchbar" placeholder="Search">
+                </div>
+            </div>
+            <div class="boxes">
+                <!-- dynamic cards -->
+                <div class="card">
+                    <div class="innercard">
+                        <h1>hello world</h1>
+                        <p class="innercardp">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores id, a tempore nam eius impedit obcaecati modi blanditiis accusamus. Nisi laudantium eius possimus quia nemo cum iure totam sint consequatur.</p>
+                        <div class="footercard">
+                            <div class="tags">
+                                <span class="cardtagspan">#Math</span>
+                                <span class="cardtagspan">#Math</span>
+                            </div>
+                            <div class="expand">
+                                <button class="expandbtn"><i class="fas fa-expand"></i></button>
+                                <!-- <a href=""><i class="fas fa-expand"></i></a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+        <div class="formmaindiv hidden">
+            <div class="errorouterdiv hidden">
+                <div class="errorinnerdiv">
+                    <p class="errorheading">
+                        Your content will be <span style="font-weight: bold;">lost</span>. Are you sure you want to exit?
+                    </p>
+                    <div class="buttons">
+                        <button type="button" class="yes">Yes</button>
+                        <button type="button" class="no">No</button>
+                    </div>
+                </div>
+            </div>
+            <div class="formdiv">
+                <form action="" class="enternoteform">
+                    <div class="titlediv">
+                        <div class="canceldiv">
+                            <!-- <h3 class="titlehead">Title</h3> -->
+                            <div class="specialtitle" style="display: flex; flex-direction: column;"><input type="text" name="" class="titletext" required placeholder="Task title..."></div>
+                             <div class="cancel"><i class="fas fa-multiply"></i></div>
+                        </div>
+        
+                    </div>
+                    <div class="circles">
+                        <div class="circle1 circle" id="0"></div>
+                        <div class="circle2 circle" id="1"></div>
+                        <div class="circle3 circle" id="2"></div>
+                        <div class="circle4 circle" id="3"></div>
+                        <div class="circle5 circle" id="4"></div>
+                    </div>
+                    <div class="notediv">
+                        <div class="summarizedbtns">
+                            <h3 class="notehead">Note</h3>
+                            <div>
+                                <!-- <button class="summarize" type="button">yo</button> -->
+                                 <div class="dropdown">
+                                    <input type="checkbox" name="" id="burger">
+                                    <label for="burger" id="dropdown-label">&#9776</label>
+                                    <div class="multilevel">
+                                        <div class="item">
+                                            <input type="checkbox" name="" id="A">
+                                            <label for="A">Summary</label>
+                                            <ul class="itemul">
+                                                <li class="itemli"><div class="sub-item">
+                                                    <input type="checkbox" name="" id="A-1">
+                                                    <label for="A-1">Strength</label>
+                                                    <ul class="subitemul" style="margin: 0px;">
+                                                        <li class="subitemli"><input type="radio" name="grp1" id="grp1 Hard" value="3"><label for="grp1 Hard">Hard</label></li>
+                                                        <li class="subitemli"><input type="radio" name="grp1" id="grp1 Medium" value="5"><label for="grp1 Medium">Medium</label></li>
+                                                        <li class="subitemli"><input type="radio" name="grp1" id="grp1 Weak" value="7"><label for="grp1 Medium">Weak</label></li>
+                                                    </ul>
+                                                </div></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                 </div>
+                                <!-- <button class="summarize"  type="button">Summarize</button> -->
+                            </div>
+                        </div>
+        
+                                   <textarea name="text" class="notetext" id="inputText" value= "Clear"  required placeholder="Your description..."></textarea>
+                    </div>
+                   <div class="tagdiv">
+                       <!-- <h3 class="tagshead">Tags</h3> -->
+                       <div class="tagandbtnwrap">
+                           <input type="text" name="" class="tagstext" placeholder="Enter your tags" >
+                           <button  type="button" class="savebtn">Save</button>
+                       </div>
+                       <div class="wheretagsgo">
+                        <!-- dynamic tags -->
+                       </div>
+                   </div>
+        
+        
+                </form>
+            </div>
+        </div>
+        
+        </main>
+        <!-- sidebar -->
+        <div class="outersidebar hidden">
+            <div class="innersidebar ">
+                <div class="titlecancel">
+                    <div class="titledivsidebar">
+                        <!-- h1 -->
+                    </div>
+                    <div class="cancel2"><i class="fas fa-multiply"></i></div>
+                </div>
+                <div class="tagsdiv">
+                    <!-- dynamic span -->
+                </div>
+                <div class="contentdiv">
+                    <div class="orignalcontent"></div>
+                    <div class="summarycontent hidden"></div>
+                    <!-- dynamic p -->
+                    
+                </div>
+                <div class="footersidebar">
+                    <div class="dropdownsidebardiv">
+        
+                        <select name="dropdownsidebar" id="dropdownsidebar" >
+                            <option value="0">Click me</option>
+                            <option value="Edit">Edit</option>
+                            <option value="Delete">Delete</option>
+                            <option value="Quiz">Quiz me!</option>
+                            <option value="Vis">Visual Map!</option>
+                        </select>
+                        <button class="selectenter">
+                            <i class="fa-solid fa-up-down"></i>                            </button>
+                    </div>
+                    <div class="toggleswitch">
+                        <button class="orignalbtn">Orignal</button>
+                        <button class="summarybtn">Summary</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- quiz -->
+            <div class="quiz hidden">
+                <div class="titlecancel">
+                    <div class="titledivsidebar">
+                        <h1>QUIZ</h1>
+                    </div>
+                    <div class="cancel2 cancelquiz"><i class="fas fa-multiply"></i></div>
+                </div>
+                <div class="tagsdiv">
+                    <!-- dynamic span -->
+                     <p>Fill in the blanks...</p>
+                </div>
+                <div class="contentdiv">
+                    <div class="orignalcontent"></div>
+                    <!-- dynamic p -->
+                    
+                </div>
+                <div class="footersidebar">
+                    <div class="dropdownsidebardiv">
+    
+                        <button class="quizenter">Check</button>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div class="visual hidden">
+        <div class="visualh1andcancel">
+            <h1>Visualize</h1>
+            <div class="cancel3"><i class="fas fa-multiply"></i></div>
+        </div>
+        <div  id="visualMap"></div>
+    </div>
+
+    <script src="api.js"></script>
+    <script src = "script.js"></script>
+    <script src="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+</body>
+</html>
