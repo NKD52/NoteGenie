@@ -56,13 +56,13 @@ let globalquizwords =[];
 
 document.addEventListener("DOMContentLoaded", () => {
     if(localStorage.length>0){
-        
+        const d = document.querySelector(".temp");
+        d.classList.toggle("hidden");
         createCard();
     
     }else{
        
-
-       const d = document.createElement("div");
+        const d = document.querySelector(".temp");
         const noResultsMessage = document.createElement("h1");
             noResultsMessage.textContent = "Create a Note Now :)";
             noResultsMessage.style.fontFamily = "Roboto";
@@ -70,10 +70,11 @@ document.addEventListener("DOMContentLoaded", () => {
             noResultsMessage.style.color = "black";
             noResultsMessage.style.letterSpacing = "3px";
             d.appendChild(noResultsMessage);
-            boxes.appendChild(d); 
+            d.classList.toggle("hidden");
     }
    
 });
+
 document.addEventListener("DOMContentLoaded", () => {
 
     // Use event delegation to handle dynamically added elements
