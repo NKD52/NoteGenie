@@ -62,11 +62,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }else{
        
 
+       const d = document.createElement("div");
         const noResultsMessage = document.createElement("h1");
             noResultsMessage.textContent = "Create a Note Now :)";
-            noResultsMessage.style.fontFamily = "sans-serifs";
+            noResultsMessage.style.fontFamily = "Roboto";
             noResultsMessage.style.opacity = "0.4";
-            boxes.appendChild(noResultsMessage);  
+            noResultsMessage.style.color = "black";
+            noResultsMessage.style.letterSpacing = "3px";
+            d.appendChild(noResultsMessage);
+            boxes.appendChild(d); 
     }
    
 });
